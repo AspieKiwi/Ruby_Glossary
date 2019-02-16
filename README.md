@@ -26,13 +26,21 @@ Can be invoked only by objects of the defining class and its subclasses. Access 
 class Box
   # constructor method
   def initialize(w,h)
-    @width, @height = w, h
-   end
+      @width, @height = w, h
+  end
    
    # define private accessor methods
    def getWidth
-    @width
+      @width
    end
+   def getHeight
+      @height
+   end
+   # make them private
+   private :getWidth, :getHeight
+   
+   # instance method to print area
+   def print
 ```
 
 
