@@ -5,6 +5,8 @@ Access Control
 
 Array
 
+Ruby
+
 
 ## Access Controls
 Ruby gives you three levels of protection at instance methods level, which may be pulbic, private or protected. Ruby does not apply any access control over instance and class variables:
@@ -101,3 +103,11 @@ last element
 ```
 
 [Source](https://www.tutorialspoint.com/ruby/ruby_variables.htm)
+
+## Object
+Every object is an instance of a class and a class defines the state(variables) and behaviours(methods) of an object. An object is an entity with state and behaviour, as defined by its class. [Source](https://blog.joshsoftware.com/2014/01/09/access-control-in-ruby-public-protected-private/)
+
+
+
+## Ruby
+A class-based object-oriented programming language. [Source](https://blog.joshsoftware.com/2014/01/09/access-control-in-ruby-public-protected-private/)
