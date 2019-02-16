@@ -10,12 +10,15 @@ Ruby gives you three levels of protection at instance methods level, which may b
 
 ### Public Methods
 Can be called by anyone. Methods are public by default except for initialize, which is always private.
+[Source](https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm)
 
 ### Private Methods
 Cannot be accessed or even viewed from outside the class. Only the class methods can access private members.
+[Source](https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm)
 
 ### Protected Methods
 Can be invoked only by objects of the defining class and its subclasses. Access is kept within the family.
+[Source](https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm)
 
 ## Access Control Examples
 
@@ -70,7 +73,7 @@ Area of the box is : 200
 test.rb:42: protected method `printArea' called for #
 <Box:0xb7f11280 @height = 20, @width = 10> (NoMethodError)
 ```
-
+[Source](https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm)
 
 
 ## Arrays
