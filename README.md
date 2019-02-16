@@ -11,9 +11,28 @@ Ruby
 ## Access Controls
 Ruby gives you three levels of protection at instance methods level, which may be pulbic, private or protected. Ruby does not apply any access control over instance and class variables:
 
+This is a way of protecting the behaviours(methods) defined in a class from being called by other objects not in the same class or inherited from the same class. To limit a method's access, Ruby uses the keywords (actually, they're methods): "private and "protected", to distinguish them from public methods. Below is a quick summary of what these different levels of access are and where/when to use them. [Source](https://blog.joshsoftware.com/2014/01/09/access-control-in-ruby-public-protected-private/)
+
 ### Public Methods
 Can be called by anyone. Methods are public by default except for initialize, which is always private.
 [Source](https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm)
+
+By default, all the methods you define will be public, unless you use the private or protected keyword/metho to make them not public. Public methods describe the outside (outside of the class definition) behaviours of an object and are called with the object as the explicit receiver (thing you're calling the method on: receiver.method). Looking at our Person class below, or # speaker method is publick, so all instances of that class (read: objects) that you create, can call that # speak method. [Source](https://blog.joshsoftware.com/2014/01/09/access-control-in-ruby-public-protected-private/)
+
+``` Ruby
+class Person
+   def speak
+      puts "Hey, Tj!"
+   end
+end
+you = Person.new
+you.speak # "Hey, Tj!"
+```
+Output
+```Ruby
+Hey, Tj!
+```
+[Source](https://blog.joshsoftware.com/2014/01/09/access-control-in-ruby-public-protected-private/)
 
 ### Private Methods
 Cannot be accessed or even viewed from outside the class. Only the class methods can access private members.
